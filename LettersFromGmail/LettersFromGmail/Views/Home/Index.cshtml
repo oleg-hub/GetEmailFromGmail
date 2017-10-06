@@ -1,0 +1,18 @@
+﻿@model LettersFromGmail.ViewModels.IndexViewModel
+
+
+<div class="login-page">
+    <div class="form">
+        @using (Html.BeginForm("LettersList", "Home", FormMethod.Post, new { @class = "login-form" }))
+            {
+            @Html.AntiForgeryToken()
+            <div class="row">
+                @Html.EditorFor(x => x.Login, new { htmlAttributes = new { placeholder = "Username" } })
+            </div>
+                <div class="row">
+                    @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })
+                </div>
+                <button>login</button>
+        }
+    </div>
+</div>

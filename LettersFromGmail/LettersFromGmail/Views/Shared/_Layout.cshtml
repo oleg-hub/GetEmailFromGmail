@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMAIL Messages</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/kendoCss/kendo.bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/kendoCss/kendo.common.min.css">
+    <link rel="stylesheet" href="~/Content/kendoCss/kendo.common-material.min.css">
+    <link rel="stylesheet" href="~/Content/kendoCss/kendo.material.min.css">
+    <link rel="stylesheet" href="~/Content/kendoCss/kendo.material.mobile.min.css">
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+</head>
+<body>
+    @RenderBody()
+    <footer></footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+   
+    @RenderSection("scripts", required: false)
+</body>
+</html>
