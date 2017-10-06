@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\LettersFromGmail.ViewModel.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\LettersFromGmail.ViewModel.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\obj\Debug\LettersFromGmail.ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\obj\Debug\LettersFromGmail.ViewModel.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\obj\Debug\LettersFromGmail.ViewModel.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\LettersFromGmail.Entity.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\LettersFromGmail.Entity.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.ViewModel\bin\Debug\Newtonsoft.Json.xml

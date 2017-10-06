@@ -1,0 +1,5 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.Entity\bin\Debug\LettersFromGmail.Entity.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.Entity\bin\Debug\LettersFromGmail.Entity.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.Entity\obj\Debug\LettersFromGmail.Entity.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.Entity\obj\Debug\LettersFromGmail.Entity.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\NewRepo\LettersFromGmail\LettersFromGmail.Entity\obj\Debug\LettersFromGmail.Entity.pdb
