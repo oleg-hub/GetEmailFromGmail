@@ -13,6 +13,8 @@ namespace LettersFromGmail.Controllers
     {
         public ActionResult Index()
         {
+            ViewModels.IndexViewModel IndexViewModel = new ViewModels.IndexViewModel();
+
            return View();
         }
 

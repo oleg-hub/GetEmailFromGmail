@@ -1,33 +1,65 @@
 ﻿@model List<LettersFromGmail.ViewModels.LettersListViewModel>
 
-<table width="60%" align="center">
-    <caption style="margin: 30px"><strong>Gmail message</strong></caption>
+   <a  class="logout-link" href="~/Home/Index">Log out</a>
 
-    <thead>
+<center>
+    <h3 style="margin: 30px"><strong>Gmail messages</strong></h3>
+    <table class="table-for-emails" width="60%">
         <tr>
             <th scope="col">From</th>
             <th scope="col">Title</th>
             <th scope="col">Summary</th>
         </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model)
+    </table>
+    <table id="data" class="table-for-emails" cellspacing='0' width="60%">
+        <tbody>
+            @foreach (var item in Model)
             {
-        <tr>
-                <th>@item.From</th>
-                <td>@item.Title</td>
-                <td>@item.Summary</td>
-        </tr>
-}
-    </tbody>
-</table>
+                <tr>
+                    <th>@item.From</th>
+                    <td>@item.Title</td>
+                    <td>@item.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</center>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script language="javascript">
+
+    $(document).ready(function () {
+        $('#data').after('<div id="nav"></div>');
+        var rowsShown = 10;
+        var rowsTotal = $('#data tbody tr').length;
+        var numPages = rowsTotal / rowsShown;
+        for (i = 0; i < numPages; i++) {
+            var pageNum = i + 1;
+            $('#nav').append('<a href="#" rel="' + i + '">' + pageNum + '</a> ');
+        }
+        $('#data tbody tr').hide();
+        $('#data tbody tr').slice(0, rowsShown).show();
+        $('#nav a:first').addClass('active');
+        $('#nav a').bind('click', function () {
+
+            $('#nav a').removeClass('active');
+            $(this).addClass('active');
+            var currPage = $(this).attr('rel');
+            var startItem = currPage * rowsShown;
+            var endItem = startItem + rowsShown;
+            $('#data tbody tr').css('opacity', '0.0').hide().slice(startItem, endItem).
+            css('display', 'table-row').animate({ opacity: 1 }, 300);
+        });
+    });
+</script>
 
 @*<div class="container">
-    <div class="row">
-        <div class="text-center">
-            <div id="grid"></div>
-      </div>
+        <div class="row">
+            <div class="text-center">
+                <div id="grid"></div>
+          </div>
+        </div>
     </div>
-</div>
-<script src="~/Scripts/App/kendoTable_showEmails.js"></script>*@
+    <script src="~/Scripts/App/kendoTable_showEmails.js"></script>*@
 

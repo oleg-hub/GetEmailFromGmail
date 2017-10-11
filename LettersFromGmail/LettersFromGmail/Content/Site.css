@@ -26,100 +26,255 @@ textarea {
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
 }
+
 .form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #4CAF50;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-.form .register-form {
-  display: none;
-}
+
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #4CAF50;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+    }
+
+        .form button:hover, .form button:active, .form button:focus {
+            background: #43A047;
+        }
+
+    .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+
+        .form .message a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+    .form .register-form {
+        display: none;
+    }
+
 .container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
 }
-.container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.container .info {
-  margin: 50px auto;
-  text-align: center;
-}
-.container .info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: #1a1a1a;
-}
-.container .info span {
-  color: #4d4d4d;
-  font-size: 12px;
-}
-.container .info span a {
-  color: #000000;
-  text-decoration: none;
-}
-.container .info span .fa {
-  color: #EF3B3A;
-}
+
+    .container:before, .container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .container .info {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+        .container .info h1 {
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 36px;
+            font-weight: 300;
+            color: #1a1a1a;
+        }
+
+        .container .info span {
+            color: #4d4d4d;
+            font-size: 12px;
+        }
+
+            .container .info span a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .container .info span .fa {
+                color: #EF3B3A;
+            }
+
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 0;
+}
+
+#data tr {
+    display: none;
+}
+
+.table-for-emails {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #fff;
+    background: #eaebec;
+    margin: 20px;
+    border: #ccc 1px solid;
+    border-collapse: separate;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 2px #d1d1d1;
+    -webkit-box-shadow: 0 1px 2px #d1d1d1;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+
+    .table-for-emails th {
+        font-weight: bold;
+        padding: 21px 25px 22px 25px;
+        border-top: 1px solid #fafafa;
+        border-bottom: 1px solid #e0e0e0;
+        background: #ededed;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+        background: -moz-linear-gradient(top, #ededed, #ebebeb);
+    }
+
+        .table-for-emails th:first-child {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+    .table-for-emails tr:first-child th:first-child {
+        -moz-border-radius-topleft: 3px;
+        -webkit-border-top-left-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+    .table-for-emails tr:first-child th:last-child {
+        -moz-border-radius-topright: 3px;
+        -webkit-border-top-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .table-for-emails tr {
+        text-align: center;
+        padding-left: 20px;
+    }
+
+        .table-for-emails tr td:first-child {
+            text-align: left;
+            padding-left: 20px;
+            border-left: 0;
+        }
+
+        .table-for-emails tr td {
+            padding: 18px;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            border-left: 1px solid #e0e0e0;
+            background: #fafafa;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+            background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+        }
+
+        .table-for-emails tr:nth-child(even) td {
+            background: #f6f6f6;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+            background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+        }
+
+        .table-for-emails tr:last-child td {
+            border-bottom: 0;
+        }
+
+            .table-for-emails tr:last-child td:first-child {
+                -moz-border-radius-bottomleft: 3px;
+                -webkit-border-bottom-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            .table-for-emails tr:last-child td:last-child {
+                -moz-border-radius-bottomright: 3px;
+                -webkit-border-bottom-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+        .table-for-emails tr:hover td {
+            background: #f2f2f2;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+            background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+        }
+
+    .table-for-emails a:link {
+        color: #666;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .table-for-emails a:visited {
+        color: #999999;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+a:active,
+a:hover {
+    color: red;
+    /*text-decoration:underline;*/
+}
+
+#nav a {
+    font-size: 25px;
+    color: #D3D3D3;
+    margin: 0.2%;
+}
+
+h3 {
+    color: #D3D3D3;
+}
+
+.logout-link {
+  
+    font-size: 18px;
+    text-decoration: none !important;
+    padding: 7px 10px;
+    margin: 30px;
+    display: inline-block;
+    color: #861c22;
+    box-shadow: 0 0 2px 1px #BDBDBD;
+    background: linear-gradient(180deg, #abb4aa 20%, #027e17 100%);
+    border-radius: 12px;
+    margin-left: 75%;
 }
